@@ -5,6 +5,6 @@ module.exports = (app) => {
     app.get('/api/dogs/:id', DogController.show);
     app.post('/api/dogs/create', DogController.create);
     app.put('/api/dogs/update/:id', DogController.update);
-    app.get('/api/dogs/destroy', DogController.destroy);
+    app.get('/api/dogs/destroy/:id', DogController.destroy);
 
 } 
